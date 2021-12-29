@@ -1,3 +1,6 @@
 window.onload = () => {
-  // code here
+  function
+  window.onload = () => {
+    function
+  };
 };

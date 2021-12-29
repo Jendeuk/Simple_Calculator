@@ -4,12 +4,18 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Jenseuu";
+  src: url(fonts/Jenseuu.ttf);
+}
+
 body {
   min-height: 100vh;
   background: #ffc6c6;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Jenseuu";
 }
 
 .calculator {
@@ -29,4 +35,42 @@ form input {
   padding: 1rem;
   color: #fff;
   background-color: rosybrown;
+  text-align: right;
+  pointer-events: none;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+button {
+  flex: 0 0 22%;
+  margin: 5px 0;
+  border: none;
+  width: 60px;
+  height: 52px;
+  font-size: 22px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-yellow {
+  background-color: rgb(134, 92, 92);
+  color: #fff;
+}
+
+.btn-grey {
+  background-color: rgb(240, 120, 120);
+}
+
+.btn-equal {
+  background-color: rgb(170, 87, 87);
+}
+
+.btn-clear {
+  background-color: rgb(170, 87, 87);
 }
